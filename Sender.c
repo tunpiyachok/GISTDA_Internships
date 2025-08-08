@@ -255,7 +255,7 @@ void* display(void*arg)
 		{
 			printf("Module ID : %hhu\n", struct_to_receive.mdid);
             printf("Telemetry ID : %hhu\n", struct_to_receive.req_id);
-            printf("Accelero X : %.2f m/s²\n", struct_to_receive.val*0.00001-160);
+            printf("Accelero X : %.2f m/sÂ²\n", struct_to_receive.val*0.00001-160);
 			printf("-------------------------------------------\n\n");	
 		}
 		
@@ -263,14 +263,14 @@ void* display(void*arg)
 		{
 			printf("Module ID : %hhu\n", struct_to_receive.mdid);
             printf("Telemetry ID : %hhu\n", struct_to_receive.req_id);
-            printf("Accelero Y : %.2f m/s²\n", struct_to_receive.val*0.00001-160);
+            printf("Accelero Y : %.2f m/sÂ²\n", struct_to_receive.val*0.00001-160);
 			printf("-------------------------------------------\n\n");	
 		}
 		else if(struct_to_receive.type == 1 && struct_to_receive.mdid == 3 && struct_to_receive.req_id == 5)
 		{
 			printf("Module ID : %hhu\n", struct_to_receive.mdid);
             printf("Telemetry ID : %hhu\n", struct_to_receive.req_id);
-            printf("Accelero Z : %.2f m/s²\n", struct_to_receive.val*0.00001-160);
+            printf("Accelero Z : %.2f m/sÂ²\n", struct_to_receive.val*0.00001-160);
 			printf("-------------------------------------------\n\n");	
 		}
 		
@@ -302,7 +302,7 @@ void* display(void*arg)
 		{
 			printf("Module ID : %hhu\n", struct_to_receive.mdid);
             printf("Telemetry ID : %hhu\n", struct_to_receive.req_id);
-            printf("Magnetic X : %.2f µT\n", struct_to_receive.val*0.01-5000);
+            printf("Magnetic X : %.2f ÂµT\n", struct_to_receive.val*0.01-5000);
 			printf("-------------------------------------------\n\n");	
 		}
 		
@@ -310,7 +310,7 @@ void* display(void*arg)
 		{
 			printf("Module ID : %hhu\n", struct_to_receive.mdid);
             printf("Telemetry ID : %hhu\n", struct_to_receive.req_id);
-            printf("Magnetic Y : %.2f µT\n", struct_to_receive.val*0.01-5000);
+            printf("Magnetic Y : %.2f ÂµT\n", struct_to_receive.val*0.01-5000);
 			printf("-------------------------------------------\n\n");	
 		}
 		
@@ -318,7 +318,7 @@ void* display(void*arg)
 		{
 			printf("Module ID : %hhu\n", struct_to_receive.mdid);
             printf("Telemetry ID : %hhu\n", struct_to_receive.req_id);
-            printf("Magnetic Z : %.2f µT\n", struct_to_receive.val*0.01-5000);
+            printf("Magnetic Z : %.2f ÂµT\n", struct_to_receive.val*0.01-5000);
 			printf("-------------------------------------------\n\n");	
 		}
 		
@@ -334,7 +334,7 @@ void* display(void*arg)
 		{
 			printf("Module ID : %hhu\n", struct_to_receive.mdid);
             printf("Telemetry ID : %hhu\n", struct_to_receive.req_id);
-            printf("Temp : %.2f °C\n", struct_to_receive.val*0.01-200);
+            printf("Temp : %.2f Â°C\n", struct_to_receive.val*0.01-200);
 			printf("-------------------------------------------\n\n");	
 		}
 		
